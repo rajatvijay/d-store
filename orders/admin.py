@@ -38,6 +38,7 @@ class OrderAdmin(admin.ModelAdmin):
                     'updated']
     list_filter = ['paid', 'created', 'updated']
     inlines = [OrderItemInline]
+    actions = [export_to_csv]
 
 
 admin.site.register(Order, OrderAdmin)
