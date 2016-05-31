@@ -3,6 +3,7 @@ import datetime
 from django.contrib import admin
 from django.http import HttpResponse
 from .models import Order, OrderItem
+from django.core.urlresolvers import reverse
 
 
 class OrderItemInline(admin.TabularInline):
@@ -30,6 +31,13 @@ def export_to_csv(modeladmin, request, queryset):
         writer.writerow(data_row)
     return response
 export_to_csv.short_description = 'Export to CSV'
+
+
+def order_detail(obj):
+    return '<a href="{}">View</a>'.format(reverse('orders:admin_order_detail',
+                                                  args=[obj.id]))
+
+order_detail.allow_tags = True
 
 
 
