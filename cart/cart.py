@@ -78,7 +78,7 @@ class Cart(object):
         Get the total price of the cart
         :return:
         """
-        return sum([Decimal(item['quantity']) * item['price'] for item in self.cart.values()])
+        return sum([Decimal(item['price']) * item['quantity'] for item in self.cart.values()])
 
     def clear(self):
         """
