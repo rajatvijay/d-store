@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'cart',
     'orders',
     'paypal.standard.ipn',
+    'payment'
 )
 
 MIDDLEWARE_CLASSES = (
