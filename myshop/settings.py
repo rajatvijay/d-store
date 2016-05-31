@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'shop',
     'cart',
+    'orders',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -66,7 +67,6 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'cart.context_processors.cart',
-                'orders',
             ],
         },
     },
