@@ -107,7 +107,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 #session-cart
 CART_SESSION_ID = 'cart'
 
+#email backened to write mails to the console
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+#django-paypal setting
+PAYPAL_RECEIVER_EMAIL = 'rajatvijay5@gmail.com'
+PAYPAL_TEST = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
