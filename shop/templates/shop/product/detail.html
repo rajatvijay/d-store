@@ -11,6 +11,10 @@
         <h1>{{ product.name }}</h1>
         <h2><a href="{{ product.category.get_absolute_url }}">{{ product.category }}</a></h2>
         <p class="price">${{ product.price }}</p>
+        <form method="post" action="{% url 'cart:cart_detail' product_id %}">
+            {% csrf_token %}
+            {{ cart_product_form }}
+        </form>
         {{ product.description|linebreaks }}
     </div>
 {% endblock %}
