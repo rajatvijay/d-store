@@ -147,3 +147,9 @@ PARLER_LANGUAGES = {
         'hide_untranslated': False,
     }
 }
+
+#redis settings
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1
