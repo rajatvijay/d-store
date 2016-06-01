@@ -45,6 +45,7 @@ INSTALLED_APPS = (
     'payment',
     'coupons',
     'rosetta',
+    'parler',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -133,3 +134,15 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale/'),
 )
+
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en',},
+        {'code': 'es',},
+    ),
+    'default': {
+        'fallback': 'en',
+        'hide_untranslated': False,
+    }
+}
