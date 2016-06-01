@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-09 02:15+0200\n"
-"PO-Revision-Date: 2016-06-01 09:18+0000\n"
+"POT-Creation-Date: 2016-06-01 02:50-0700\n"
+"PO-Revision-Date: 2016-06-01 09:52+0000\n"
 "Last-Translator:   <rajatvijay5@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,9 +19,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.7.6\n"
 
-#: cart/forms.py:11 cart/templates/cart/detail.html:16
-msgid "Quantity"
-msgstr "Cantidad"
+#: cart/forms.py:7
+msgid "quantity"
+msgstr "cantidad"
 
 #: cart/templates/cart/detail.html:6 cart/templates/cart/detail.html.py:10
 msgid "Your shopping cart"
@@ -34,6 +34,10 @@ msgstr "Imagen"
 #: cart/templates/cart/detail.html:15
 msgid "Product"
 msgstr "Producto"
+
+#: cart/templates/cart/detail.html:16
+msgid "Quantity"
+msgstr "Cantidad"
 
 #: cart/templates/cart/detail.html:17 cart/templates/cart/detail.html.py:40
 msgid "Remove"
@@ -70,7 +74,6 @@ msgid "Total"
 msgstr "Total"
 
 #: cart/templates/cart/detail.html:71
-#: shop/templates/shop/product/detail.html:23
 msgid "People who bought this also bought"
 msgstr "Las personas que compraron esto también compraron"
 
@@ -94,50 +97,33 @@ msgstr "Realizar comprar"
 msgid "Coupon"
 msgstr "Cupón"
 
-#: myshop/settings.py:104
+#: myshop/settings.py:101
 msgid "English"
 msgstr "Inglés"
 
-#: myshop/settings.py:105
+#: myshop/settings.py:102
 msgid "Spanish"
 msgstr "Español"
 
-#: myshop/urls.py:11
+#: myshop/urls.py:25
 msgid "^cart/"
 msgstr "^carro/"
 
-#: myshop/urls.py:12
+#: myshop/urls.py:26
 msgid "^orders/"
 msgstr "^pedidos/"
 
-#: myshop/urls.py:13
+#: myshop/urls.py:27
+msgid "^paypal/"
+msgstr "^paypal/"
+
+#: myshop/urls.py:28
 msgid "^payment/"
 msgstr "^pago/"
 
-#: myshop/urls.py:15
+#: myshop/urls.py:29
 msgid "^coupons/"
 msgstr "^cupones/"
-
-#: payment/templates/payment/canceled.html:5
-msgid "Your payment has not been processed"
-msgstr "Tu pago no ha sido procesado"
-
-#: payment/templates/payment/canceled.html:6
-msgid "There was a problem processing your payment."
-msgstr "Ha habido un problema al procesar tu pago."
-
-#: payment/templates/payment/done.html:5
-msgid "Your payment was successful"
-msgstr "Has pagado con éxito"
-
-#: payment/templates/payment/done.html:6
-msgid "Your payment has been successfully received."
-msgstr "Tu pago se ha recibido correctamente."
-
-#: payment/templates/payment/process.html:4
-#: payment/templates/payment/process.html:7
-msgid "Pay using PayPal"
-msgstr "Pagar mediante PayPal"
 
 #: payment/urls.py:7
 msgid "^process/$"
@@ -151,30 +137,32 @@ msgstr "^realizado/$"
 msgid "^canceled/$"
 msgstr "^cancelado/$"
 
-#: shop/templates/shop/base.html:7 shop/templates/shop/base.html.py:12
+#: shop/templates/shop/base.html:9 shop/templates/shop/base.html.py:15
 msgid "My shop"
 msgstr "Mi tienda"
 
-#: shop/templates/shop/base.html:18
-msgid "Language"
-msgstr "Idioma"
-
-#: shop/templates/shop/base.html:34
+#: shop/templates/shop/base.html:21
 msgid "Your cart"
 msgstr "Tu carro"
 
-#: shop/templates/shop/base.html:36
-#, python-format
+#: shop/templates/shop/base.html:23
+#, fuzzy, python-format
+#| msgid ""
+#| "\n"
+#| "                            %(total_items)s item%(total_items_plural)s, $%(total_price)s\n"
+#| "                        "
 msgid ""
 "\n"
-"                            %(total_items)s item%(total_items_plural)s, $%(total_price)s\n"
+"                            %(total_items)s item%(total_items_plural)s,$%(total_price)s\n"
 "                        "
 msgstr ""
 "\n"
 "%(total_items)s producto%(total_items_plural)s, $%(total_price)s"
 
-#: shop/templates/shop/base.html:41
-msgid "Your cart is empty."
+#: shop/templates/shop/base.html:28
+#, fuzzy
+#| msgid "Your cart is empty."
+msgid "Your cart is empty"
 msgstr "Tu carro está vacío."
 
 #: shop/templates/shop/product/detail.html:18
@@ -194,5 +182,20 @@ msgstr "Categorías"
 msgid "All"
 msgstr "Todos"
 
-#~ msgid "quantity"
-#~ msgstr "cantidad"
+#~ msgid "Your payment has not been processed"
+#~ msgstr "Tu pago no ha sido procesado"
+
+#~ msgid "There was a problem processing your payment."
+#~ msgstr "Ha habido un problema al procesar tu pago."
+
+#~ msgid "Your payment was successful"
+#~ msgstr "Has pagado con éxito"
+
+#~ msgid "Your payment has been successfully received."
+#~ msgstr "Tu pago se ha recibido correctamente."
+
+#~ msgid "Pay using PayPal"
+#~ msgstr "Pagar mediante PayPal"
+
+#~ msgid "Language"
+#~ msgstr "Idioma"

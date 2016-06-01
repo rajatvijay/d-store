@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-01 01:44-0700\n"
+"POT-Creation-Date: 2016-06-01 02:50-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,12 +93,44 @@ msgstr ""
 msgid "Coupon"
 msgstr ""
 
-#: myshop/settings.py:100
+#: myshop/settings.py:101
 msgid "English"
 msgstr ""
 
-#: myshop/settings.py:101
+#: myshop/settings.py:102
 msgid "Spanish"
+msgstr ""
+
+#: myshop/urls.py:25
+msgid "^cart/"
+msgstr ""
+
+#: myshop/urls.py:26
+msgid "^orders/"
+msgstr ""
+
+#: myshop/urls.py:27
+msgid "^paypal/"
+msgstr ""
+
+#: myshop/urls.py:28
+msgid "^payment/"
+msgstr ""
+
+#: myshop/urls.py:29
+msgid "^coupons/"
+msgstr ""
+
+#: payment/urls.py:7
+msgid "^process/$"
+msgstr ""
+
+#: payment/urls.py:8
+msgid "^done/$"
+msgstr ""
+
+#: payment/urls.py:9
+msgid "^canceled/$"
 msgstr ""
 
 #: shop/templates/shop/base.html:9 shop/templates/shop/base.html.py:15
