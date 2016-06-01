@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-01 02:50-0700\n"
-"PO-Revision-Date: 2016-06-01 09:52+0000\n"
+"PO-Revision-Date: 2016-06-01 11:04+0000\n"
 "Last-Translator:   <rajatvijay5@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -146,7 +146,7 @@ msgid "Your cart"
 msgstr "Tu carro"
 
 #: shop/templates/shop/base.html:23
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "\n"
 #| "                            %(total_items)s item%(total_items_plural)s, $%(total_price)s\n"
@@ -160,7 +160,6 @@ msgstr ""
 "%(total_items)s producto%(total_items_plural)s, $%(total_price)s"
 
 #: shop/templates/shop/base.html:28
-#, fuzzy
 #| msgid "Your cart is empty."
 msgid "Your cart is empty"
 msgstr "Tu carro está vacío."
